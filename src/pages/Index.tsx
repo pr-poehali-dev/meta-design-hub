@@ -84,7 +84,7 @@ const Index = () => {
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <Icon name="CheckCircle" size={20} className="text-green-600 mr-3" />
-                    <span className="text-gray-700">5+ лет опыта в графическом дизайне</span>
+                    <span className="text-gray-700">3+ лет опыта в графическом дизайне</span>
                   </div>
                   <div className="flex items-center">
                     <Icon name="CheckCircle" size={20} className="text-green-600 mr-3" />
