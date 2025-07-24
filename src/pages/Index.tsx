@@ -36,9 +36,7 @@ const Index = () => {
               Графический дизайнер
               <span className="text-purple-600"> метавселенных</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Создаю обложки и аватарки для крупных Roblox игр, телеканалов, концертов и спортивных организаций с коммерческим опытом
-            </p>
+            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Создаю обложки и аватарки для крупных Roblox игр и миров в метавселенных</p>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Badge variant="secondary" className="px-4 py-2">
                 <Icon name="Gamepad2" size={16} className="mr-2" />
