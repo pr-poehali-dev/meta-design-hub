@@ -191,30 +191,35 @@ const Index = () => {
                   </div>
                   
                   <div>
-                    <h3 className="text-2xl font-semibold text-foreground mb-6">Примерные рамки:</h3>
+                    <h3 className="text-2xl font-semibold text-foreground mb-6">Что входит в работу:</h3>
                     <div className="space-y-4">
-                      <div className="p-4 bg-muted/50 rounded-lg">
-                        <div className="flex justify-between items-center mb-2">
-                          <span className="font-medium text-foreground">Простая обложка</span>
-                          <span className="text-primary font-bold">от 3,000₽</span>
+                      <div className="flex items-start">
+                        <Icon name="FileImage" size={20} className="text-primary mr-3 mt-1" />
+                        <div>
+                          <p className="font-medium text-foreground">Готовые файлы</p>
+                          <p className="text-sm text-muted-foreground">PNG, JPG в высоком разрешении</p>
                         </div>
-                        <p className="text-sm text-muted-foreground">Базовый дизайн с минимальными элементами</p>
                       </div>
-                      
-                      <div className="p-4 bg-muted/50 rounded-lg">
-                        <div className="flex justify-between items-center mb-2">
-                          <span className="font-medium text-foreground">Детализированная обложка</span>
-                          <span className="text-primary font-bold">от 8,000₽</span>
+                      <div className="flex items-start">
+                        <Icon name="Users" size={20} className="text-primary mr-3 mt-1" />
+                        <div>
+                          <p className="font-medium text-foreground">Консультации</p>
+                          <p className="text-sm text-muted-foreground">Обсуждение концепции и правки</p>
                         </div>
-                        <p className="text-sm text-muted-foreground">Сложная композиция с множеством элементов</p>
                       </div>
-                      
-                      <div className="p-4 bg-muted/50 rounded-lg">
-                        <div className="flex justify-between items-center mb-2">
-                          <span className="font-medium text-foreground">Полный брендинг</span>
-                          <span className="text-primary font-bold">от 15,000₽</span>
+                      <div className="flex items-start">
+                        <Icon name="Shield" size={20} className="text-primary mr-3 mt-1" />
+                        <div>
+                          <p className="font-medium text-foreground">Гарантия качества</p>
+                          <p className="text-sm text-muted-foreground">Доработки до полного соответствия</p>
                         </div>
-                        <p className="text-sm text-muted-foreground">Комплексное визуальное решение</p>
+                      </div>
+                      <div className="flex items-start">
+                        <Icon name="Zap" size={20} className="text-primary mr-3 mt-1" />
+                        <div>
+                          <p className="font-medium text-foreground">Быстрая реализация</p>
+                          <p className="text-sm text-muted-foreground">Сроки от 1 до 7 дней</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -229,14 +234,10 @@ const Index = () => {
                   <p className="text-muted-foreground mb-6">
                     Расскажите о ваших требованиях, и я подготовлю индивидуальное предложение
                   </p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <div className="flex justify-center">
                     <Button size="lg" className="bg-primary hover:bg-primary/90">
                       <Icon name="MessageCircle" size={20} className="mr-2" />
                       Обсудить проект
-                    </Button>
-                    <Button size="lg" variant="outline">
-                      <Icon name="Calculator" size={20} className="mr-2" />
-                      Получить расчет
                     </Button>
                   </div>
                 </div>
