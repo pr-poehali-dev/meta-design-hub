@@ -145,108 +145,101 @@ const Index = () => {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-20 bg-white">
+      <section id="pricing" className="py-20 bg-muted/20">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Цены</h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Card className="relative">
-              <CardHeader>
-                <CardTitle className="text-center">Базовый</CardTitle>
-                <CardDescription className="text-center">Для небольших проектов</CardDescription>
-                <div className="text-center">
-                  <span className="text-4xl font-bold text-gray-900">₽5,000</span>
-                  <span className="text-gray-600">/проект</span>
+          <h2 className="text-4xl font-bold text-foreground mb-8 text-center">Стоимость работ</h2>
+          <p className="text-xl text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
+            Каждый проект уникален. Стоимость рассчитывается индивидуально в зависимости от сложности и требований.
+          </p>
+          
+          <div className="max-w-4xl mx-auto">
+            <Card className="mb-8">
+              <CardContent className="p-8">
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h3 className="text-2xl font-semibold text-foreground mb-6">Факторы ценообразования:</h3>
+                    <div className="space-y-4">
+                      <div className="flex items-start">
+                        <Icon name="Gamepad2" size={20} className="text-primary mr-3 mt-1" />
+                        <div>
+                          <p className="font-medium text-foreground">Тип проекта</p>
+                          <p className="text-sm text-muted-foreground">Обложка, аватарка, полный брендинг</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <Icon name="Clock" size={20} className="text-primary mr-3 mt-1" />
+                        <div>
+                          <p className="font-medium text-foreground">Срочность</p>
+                          <p className="text-sm text-muted-foreground">Стандартные сроки или экспресс-заказ</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <Icon name="Palette" size={20} className="text-primary mr-3 mt-1" />
+                        <div>
+                          <p className="font-medium text-foreground">Сложность дизайна</p>
+                          <p className="text-sm text-muted-foreground">Количество элементов и детализация</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <Icon name="RefreshCw" size={20} className="text-primary mr-3 mt-1" />
+                        <div>
+                          <p className="font-medium text-foreground">Количество правок</p>
+                          <p className="text-sm text-muted-foreground">Дополнительные итерации</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-2xl font-semibold text-foreground mb-6">Примерные рамки:</h3>
+                    <div className="space-y-4">
+                      <div className="p-4 bg-muted/50 rounded-lg">
+                        <div className="flex justify-between items-center mb-2">
+                          <span className="font-medium text-foreground">Простая обложка</span>
+                          <span className="text-primary font-bold">от 3,000₽</span>
+                        </div>
+                        <p className="text-sm text-muted-foreground">Базовый дизайн с минимальными элементами</p>
+                      </div>
+                      
+                      <div className="p-4 bg-muted/50 rounded-lg">
+                        <div className="flex justify-between items-center mb-2">
+                          <span className="font-medium text-foreground">Детализированная обложка</span>
+                          <span className="text-primary font-bold">от 8,000₽</span>
+                        </div>
+                        <p className="text-sm text-muted-foreground">Сложная композиция с множеством элементов</p>
+                      </div>
+                      
+                      <div className="p-4 bg-muted/50 rounded-lg">
+                        <div className="flex justify-between items-center mb-2">
+                          <span className="font-medium text-foreground">Полный брендинг</span>
+                          <span className="text-primary font-bold">от 15,000₽</span>
+                        </div>
+                        <p className="text-sm text-muted-foreground">Комплексное визуальное решение</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3">
-                  <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-600 mr-2" />
-                    <span className="text-sm">1 концепт дизайна</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-600 mr-2" />
-                    <span className="text-sm">2 правки</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-600 mr-2" />
-                    <span className="text-sm">Срок: 3-5 дней</span>
-                  </li>
-                </ul>
-                <Button className="w-full mt-6" variant="outline">
-                  Выбрать план
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="relative border-purple-200 shadow-lg">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <Badge className="bg-purple-600 text-white">Популярный</Badge>
-              </div>
-              <CardHeader>
-                <CardTitle className="text-center">Стандартный</CardTitle>
-                <CardDescription className="text-center">Для серьезных проектов</CardDescription>
+                
+                <Separator className="my-8" />
+                
                 <div className="text-center">
-                  <span className="text-4xl font-bold text-gray-900">₽12,000</span>
-                  <span className="text-gray-600">/проект</span>
+                  <h4 className="text-xl font-semibold text-foreground mb-4">
+                    Хотите узнать точную стоимость вашего проекта?
+                  </h4>
+                  <p className="text-muted-foreground mb-6">
+                    Расскажите о ваших требованиях, и я подготовлю индивидуальное предложение
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <Button size="lg" className="bg-primary hover:bg-primary/90">
+                      <Icon name="MessageCircle" size={20} className="mr-2" />
+                      Обсудить проект
+                    </Button>
+                    <Button size="lg" variant="outline">
+                      <Icon name="Calculator" size={20} className="mr-2" />
+                      Получить расчет
+                    </Button>
+                  </div>
                 </div>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3">
-                  <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-600 mr-2" />
-                    <span className="text-sm">3 концепта дизайна</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-600 mr-2" />
-                    <span className="text-sm">Неограниченные правки</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-600 mr-2" />
-                    <span className="text-sm">Срок: 5-7 дней</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-600 mr-2" />
-                    <span className="text-sm">Исходные файлы</span>
-                  </li>
-                </ul>
-                <Button className="w-full mt-6 bg-purple-600 hover:bg-purple-700">
-                  Выбрать план
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="relative">
-              <CardHeader>
-                <CardTitle className="text-center">Премиум</CardTitle>
-                <CardDescription className="text-center">Для крупных компаний</CardDescription>
-                <div className="text-center">
-                  <span className="text-4xl font-bold text-gray-900">₽25,000</span>
-                  <span className="text-gray-600">/проект</span>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3">
-                  <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-600 mr-2" />
-                    <span className="text-sm">5 концептов дизайна</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-600 mr-2" />
-                    <span className="text-sm">Неограниченные правки</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-600 mr-2" />
-                    <span className="text-sm">Срок: 3-5 дней</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-green-600 mr-2" />
-                    <span className="text-sm">Приоритетная поддержка</span>
-                  </li>
-                </ul>
-                <Button className="w-full mt-6" variant="outline">
-                  Выбрать план
-                </Button>
               </CardContent>
             </Card>
           </div>
