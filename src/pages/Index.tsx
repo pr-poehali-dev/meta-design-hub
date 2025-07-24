@@ -218,7 +218,7 @@ const Index = () => {
                         <Icon name="Zap" size={20} className="text-primary mr-3 mt-1" />
                         <div>
                           <p className="font-medium text-foreground">Быстрая реализация</p>
-                          <p className="text-sm text-muted-foreground">Сроки от 1 до 7 дней</p>
+                          <p className="text-sm text-muted-foreground">Сроки от 1 дня</p>
                         </div>
                       </div>
                     </div>
